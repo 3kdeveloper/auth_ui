@@ -1,3 +1,5 @@
+import 'package:auth_ui_flutter/views/theme/app_theme.dart';
+
 import 'utils/exports.dart';
 
 void main() {
@@ -10,12 +12,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return GetMaterialApp(
+      title: 'Auth Ui',
+      debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.noTransition,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: AppTheme.kPrimaryColor,
+        // ignore: deprecated_member_use
+        accentColor: AppTheme.kAccentColor,
+        scaffoldBackgroundColor: AppTheme.kWhiteColor,
       ),
-      home: const SplashScreen(),
+      home: SplashScreen(),
     );
   }
 }

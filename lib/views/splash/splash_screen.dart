@@ -1,10 +1,20 @@
+import 'package:auth_ui_flutter/controllers/splash_controller.dart';
+
 import '../../utils/exports.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  SplashScreen({Key? key}) : super(key: key);
+  final splashController = Get.put(SplashController());
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Image.asset(
+          'assets/images/login.png',
+          height: Get.height * 0.2,
+        ),
+      ),
+    );
   }
 }

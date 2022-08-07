@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.auth_ui_flutter">
    <application
-        android:label="auth_ui_flutter"
+        android:label="Auth Ui"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -28,8 +28,10 @@ flutter:
   
   assets:
     - assets/
+    - assets/icons/
+    - assets/images/
 
   fonts:
     - family: RobotoMono-Regular
       fonts:
-        - asset: asssets/fonts/RobotoMono-Regular.ttf
+        - asset: assets/fonts/RobotoMono-Regular.ttf
