@@ -1,5 +1,3 @@
-import 'package:auth_ui_flutter/views/theme/app_theme.dart';
-
 import 'utils/exports.dart';
 
 void main() {
@@ -16,12 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Auth Ui',
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.noTransition,
-      theme: ThemeData(
-        primaryColor: AppTheme.kPrimaryColor,
-        // ignore: deprecated_member_use
-        accentColor: AppTheme.kAccentColor,
-        scaffoldBackgroundColor: AppTheme.kWhiteColor,
-      ),
+      theme: AppTheme.themeData,
       home: SplashScreen(),
     );
   }

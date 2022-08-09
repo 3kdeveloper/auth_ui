@@ -6,7 +6,7 @@ class SplashController extends GetxController {
   _splashDuration() {
     Timer(const Duration(seconds: 4), () {
       //TODO goto onboarding screen / login / home
-      Get.off(() => const OnBoardingScreen());
+      Get.off(() => const LoginScreen());
     });
   }
 
