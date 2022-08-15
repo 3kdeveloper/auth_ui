@@ -1,17 +1,23 @@
 import '../../utils/exports.dart';
 
 class CustomTextField extends StatelessWidget {
+  final TextEditingController controller;
   final String? hintText;
   final TextInputType? keyboardType;
+  final bool? obscureText;
   final IconData? prefixIcon;
   final Widget? suffixIcon;
+  final String? Function(String? value)? validator;
 
   const CustomTextField({
     Key? key,
+    required this.controller,
     this.hintText,
     this.keyboardType,
+    this.obscureText = false,
     this.prefixIcon,
     this.suffixIcon,
+    this.validator,
   }) : super(key: key);
 
   @override
@@ -25,6 +31,7 @@ class CustomTextField extends StatelessWidget {
       child: TextFormField(
         cursorColor: AppTheme.kPrimaryColor,
         keyboardType: keyboardType,
+        obscureText: obscureText!,
         style: textStyle,
         decoration: InputDecoration(
           hintText: hintText ?? '',
@@ -38,6 +45,7 @@ class CustomTextField extends StatelessWidget {
           filled: true,
           border: InputBorder.none,
         ),
+        validator: validator,
       ),
     );
   }

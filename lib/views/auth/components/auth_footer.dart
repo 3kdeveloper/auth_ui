@@ -18,10 +18,10 @@ class AuthFooter extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       mainAxisSize: MainAxisSize.min,
       children: [
-        AppTheme.descriptionTextStyle(text: text),
+        SubTitleTextStyle(text: text),
         TextButton(
           onPressed: onPressed,
-          child: AppTheme.descriptionTextStyle(
+          child: SubTitleTextStyle(
             text: btnText,
             color: AppTheme.kPrimaryColor,
           ),

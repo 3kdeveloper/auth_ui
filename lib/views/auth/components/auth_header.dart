@@ -18,10 +18,10 @@ class AuthHeader extends StatelessWidget {
       children: [
         Image.asset(
           imagePath,
-          height: Get.height * 0.3,
+          height: Get.height * 0.35,
           fit: BoxFit.cover,
         ),
-        AppTheme.titleTextStyle(text: text),
+        TitleTextStyle(text: text),
       ],
     );
   }

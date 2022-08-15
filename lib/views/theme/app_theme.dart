@@ -8,43 +8,6 @@ class AppTheme {
   static const kBlackColor = Color(0xFF000000);
   static const kTextFieldColor = Color(0xFFE7E7EC);
 
-  // Text Style
-  static Widget titleTextStyle({
-    required String text,
-    Color? color,
-  }) {
-    return AutoSizeText(
-      text,
-      style: TextStyle(
-        fontWeight: FontWeight.w700,
-        fontSize: 20,
-        fontFamily: 'RobotoMono-Regular',
-        color: color ?? kBlackColor,
-      ),
-      maxFontSize: 24,
-      minFontSize: 16,
-      overflow: TextOverflow.ellipsis,
-    );
-  }
-
-  static Widget descriptionTextStyle({
-    required String text,
-    Color? color,
-  }) {
-    return AutoSizeText(
-      text,
-      style: TextStyle(
-        fontWeight: FontWeight.w400,
-        fontSize: 18,
-        fontFamily: 'RobotoMono-Regular',
-        color: color ?? kBlackColor,
-      ),
-      maxFontSize: 22,
-      minFontSize: 14,
-      overflow: TextOverflow.ellipsis,
-    );
-  }
-
   static ThemeData themeData = ThemeData(
     primaryColor: kPrimaryColor,
     // ignore: deprecated_member_use

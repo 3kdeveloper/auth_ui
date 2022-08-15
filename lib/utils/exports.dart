@@ -22,8 +22,11 @@ export 'package:auth_ui_flutter/views/auth/components/social_buttons.dart';
 export 'package:auth_ui_flutter/views/theme/app_theme.dart';
 
 //-- Widgets
-export 'package:auth_ui_flutter/views/widgets/custom_text_field.dart';
+
 export 'package:auth_ui_flutter/views/widgets/custom_button.dart';
+export 'package:auth_ui_flutter/views/widgets/custom_text_field.dart';
+export 'package:auth_ui_flutter/views/widgets/sub_title_text_style.dart';
+export 'package:auth_ui_flutter/views/widgets/title_text_style.dart';
 
 // Models
 // Controllers

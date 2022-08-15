@@ -25,7 +25,7 @@ class CustomButton extends StatelessWidget {
           //todo make this smooth
           borderRadius: BorderRadius.circular(15),
         ),
-        child: AppTheme.titleTextStyle(
+        child: TitleTextStyle(
           text: btnText,
           color: AppTheme.kWhiteColor,
         ),
